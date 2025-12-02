@@ -8,7 +8,7 @@ app = Flask(__name__)
 CORS(app) 
 
 # Khởi tạo công cụ tìm kiếm địa điểm (cần user_agent để không bị chặn)
-geolocator = Nominatim(user_agent="geo_app_test_for_student_v1", timeout=10)
+geolocator = Nominatim(user_agent="geo_app_test_for_student_v1", timeout=20)
 
 @app.route('/api/get-city', methods=['POST'])
 def get_city():
